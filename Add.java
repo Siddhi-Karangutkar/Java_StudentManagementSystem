@@ -70,7 +70,7 @@ JButton btnAdd,btnBack;
 
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 			String url = "jdbc:mysql://localhost:3306/sms_26july25";
-			Connection con = DriverManager.getConnection(url,"root","root");
+			Connection con = DriverManager.getConnection(url,"root","{your_password}");
 	
 			String sql = "insert into student values(?,?,?,?,?)";
 			PreparedStatement pst = con.prepareStatement(sql);
